@@ -4,5 +4,5 @@ ADD --chmod=777 https://github.com/cloudflare/cloudflared/releases/download/2021
 
 # RUN chmod +x /bin/cloudflared
 
-ENTRYPOINT ["cloudflared", "--no-autoupdate"]
+ENTRYPOINT ["/bin/cloudflared", "--no-autoupdate"]
 CMD ["version"]
