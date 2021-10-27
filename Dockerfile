@@ -4,5 +4,5 @@ ADD https://github.com/cloudflare/cloudflared/releases/download/2021.10.5/cloudf
 
 # RUN chmod +x /cloudflared
 
-ENTRYPOINT ["cloudflared", "--no-autoupdate"]
+ENTRYPOINT ["/cloudflared", "--no-autoupdate"]
 CMD ["version"]
