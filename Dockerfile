@@ -5,7 +5,7 @@ RUN chmod +x /cloudflared
 
 ########################################
 
-FROM gcr.io/distroless/static-debian11
+FROM alpine
 
 COPY --from=base /cloudflared /
 
