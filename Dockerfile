@@ -1,6 +1,6 @@
 FROM amd64/alpine as base
 
-ADD https://github.com/cloudflare/cloudflared/releases/download/2021.10.5/cloudflared-linux-arm /cloudflared
+ADD https://github.com/cloudflare/cloudflared/releases/download/2021.11.0/cloudflared-linux-arm /cloudflared
 RUN chmod +x /cloudflared
 
 ########################################
